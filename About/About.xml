@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Outer Rim - Chiss Ascendancy</name>
+	<description>Outer Rim module adding the Chiss race and their faction, the Chiss Ascendancy, fully equipped with their own weapons and armour.</description>
+	<author>Neronix17</author>
+	<packageId>Neronix17.OuterRim.Csilla</packageId>
+	<url>https://www.patreon.com/neronix17</url>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>Neronix17.OuterRim.Core</packageId>
+			<displayName>Outer Rim - Core</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2919227155</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>erdelf.HumanoidAlienRaces</li>
+		<li>Neronix17.OuterRim.Core</li>
+	</loadAfter>
+</ModMetaData>

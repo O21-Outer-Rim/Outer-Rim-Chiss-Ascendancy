@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>OuterRim_ChissAscendancy</defName>
+		<label>chiss ascendancy</label>
+		<description>The Chiss Ascendancy, sometimes termed Chiss Space or the Chiss Empire by outsiders, was a portion of the galaxy just inside the Unknown Regions that was ruled by the Chiss.</description>
+		<pawnSingular>chiss</pawnSingular>
+		<pawnsPlural>chiss</pawnsPlural>
+		<categoryTag>Outlander</categoryTag>
+		<settlementGenerationWeight>0.3</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<earliestRaidDays>35</earliestRaidDays>
+    	<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+    	<leaderTitle>syndic</leaderTitle>
+		<permanentEnemy>false</permanentEnemy>
+		<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>
+		<fixedName>Chiss Ascendancy</fixedName>
+    	<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<techLevel>Ultra</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<visitorTraderKinds>
+			<li>OuterRim_ChissAsc_Visitor</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+			<li>OuterRim_ChissAsc_Caravan</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>OuterRim_ChissAsc_Base</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+		  <min>-50</min>
+		  <max>45</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<OuterRim_ChissAscendancy_Syndic>1</OuterRim_ChissAscendancy_Syndic>
+					<OuterRim_ChissAscendancy_Officer>2</OuterRim_ChissAscendancy_Officer>
+					<OuterRim_ChissAscendancy_Trooper>20</OuterRim_ChissAscendancy_Trooper>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<OuterRim_ChissAscendancy_Syndic>1</OuterRim_ChissAscendancy_Syndic>
+					<OuterRim_ChissAscendancy_Officer>2</OuterRim_ChissAscendancy_Officer>
+					<OuterRim_ChissAscendancy_Trooper>20</OuterRim_ChissAscendancy_Trooper>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<OuterRim_ChissAscendancy_Trader>1</OuterRim_ChissAscendancy_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>4</Muffalo>
+				</carriers>
+				<guards>
+					<OuterRim_ChissAscendancy_Officer>1</OuterRim_ChissAscendancy_Officer>
+					<OuterRim_ChissAscendancy_Trooper>10</OuterRim_ChissAscendancy_Trooper>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<OuterRim_ChissAscendancy_Syndic>1</OuterRim_ChissAscendancy_Syndic>
+					<OuterRim_ChissAscendancy_Officer>3</OuterRim_ChissAscendancy_Officer>
+					<OuterRim_ChissAscendancy_Trooper>20</OuterRim_ChissAscendancy_Trooper>
+				</options>
+			</li>
+		</pawnGroupMakers>
+    	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<factionIconPath>OuterRim/UI/Cultures/Chiss</factionIconPath>
+        <colorSpectrum>
+            <li>RGB(55, 72, 110)</li>
+        </colorSpectrum>
+		<allowedCultures>
+			<li>OuterRim_CultureChiss</li>
+		</allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology, Neronix17.OuterRim.HokeyReligions">OuterRim_MemeBendu</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+		</requiredMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raiding_Respected</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raiding_Required</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_None</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_ExtremelySlow</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOrSocial</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredRavenous</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredStrong</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Preferred</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Disapproved</li>
+		</disallowedPrecepts>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>30</configurationListOrderPriority>
+		<modExtensions>
+			<li MayRequire="VanillaExpanded.VanillaTradingExpanded" Class="VanillaTradingExpanded.BankExtension" >
+				<bankNameKey>VTE.OuterRim_ChissBankName</bankNameKey>
+				<feesByGoodwill>
+					<points>
+						<li>(-100, 2.0)</li>
+						<li>(-50, 1.0)</li>
+						<li>(0, 0.5)</li>
+						<li>(50, 0.25)</li>
+						<li>(100, 0)</li>
+					</points>
+				</feesByGoodwill>
+				<loanOptions>
+					<li>
+						<loanNameKey>VTE.QuickCashLoan</loanNameKey>
+						<fixedLoanAmount>10000</fixedLoanAmount>
+						<fixedRepayAmount>10000</fixedRepayAmount>
+						<transactionFeesIncluded>true</transactionFeesIncluded>
+						<loanRepayPeriodDays>20</loanRepayPeriodDays>
+					</li>
+					<li>
+						<loanNameKey>VTE.ShortTermLoan</loanNameKey>
+						<loanAmountPerDeposit>0.5</loanAmountPerDeposit>
+						<repayAmountPerDeposit>0.5</repayAmountPerDeposit>
+						<transactionFeesIncluded>true</transactionFeesIncluded>
+						<loanRepayPeriodDays>80</loanRepayPeriodDays>
+					</li>
+					<li>
+						<loanNameKey>VTE.LongTermLoan</loanNameKey>
+						<loanAmountPerDeposit>1</loanAmountPerDeposit>
+						<repayAmountPerDeposit>1</repayAmountPerDeposit>
+						<transactionFeesIncluded>true</transactionFeesIncluded>
+						<loanRepayPeriodDays>160</loanRepayPeriodDays>
+					</li>
+					<li>
+						<loanNameKey>VTE.MortgageLoan</loanNameKey>
+						<loanAmountPerDeposit>2</loanAmountPerDeposit>
+						<repayAmountPerDeposit>2</repayAmountPerDeposit>
+						<transactionFeesIncluded>true</transactionFeesIncluded>
+						<loanRepayPeriodDays>330</loanRepayPeriodDays>
+					</li>
+				</loanOptions>
+			</li>
+			<!-- <li MayRequire="Neronix17.Spaceships" Class="Spaceships.DefModExt_SpaceshipFaction">
+				<factionSpaceships>
+					<li>OuterRim_YG4210Spaceship</li>
+					<li>OuterRim_CR90Spaceship</li>
+				</factionSpaceships>
+				<expeditionGroupMakers>
+					<li>
+						<kind>Expedition</kind>
+						<commonality>100</commonality>
+						<options>
+							<MiningCoGeologist>4</MiningCoGeologist>
+							<MiningCoTechnician>1</MiningCoTechnician>
+							<MiningCoScout>1</MiningCoScout>
+							<MiningCoGuard>3</MiningCoGuard>
+							<MiningCoOfficer>1</MiningCoOfficer>
+						</options>
+					</li>
+					<li>
+						<kind>Expedition</kind>
+						<commonality>100</commonality>
+						<options>
+							<MiningCoTechnician>1</MiningCoTechnician>
+							<MiningCoMiner>4</MiningCoMiner>
+							<MiningCoGuard>4</MiningCoGuard>
+							<MiningCoOfficer>1</MiningCoOfficer>
+						</options>
+					</li>
+					<li>
+						<kind>Expedition</kind>
+						<commonality>100</commonality>
+						<options>
+							<MiningCoTechnician>6</MiningCoTechnician>
+							<MiningCoScout>1</MiningCoScout>
+							<MiningCoGuard>4</MiningCoGuard>
+							<MiningCoOfficer>1</MiningCoOfficer>
+						</options>
+					</li>
+					<li>
+						<kind>Expedition</kind>
+						<commonality>100</commonality>
+						<options>
+							<MiningCoScout>3</MiningCoScout>
+							<MiningCoOfficer>1</MiningCoOfficer>
+						</options>
+					</li>
+					<li>
+						<kind>Expedition</kind>
+						<commonality>100</commonality>
+						<options>
+							<MiningCoScout>2</MiningCoScout>
+							<MiningCoGuard>8</MiningCoGuard>
+							<MiningCoShockTrooper>4</MiningCoShockTrooper>
+							<MiningCoHeavyGuard>2</MiningCoHeavyGuard>
+							<MiningCoOfficer>2</MiningCoOfficer>
+						</options>
+					</li>
+				</expeditionGroupMakers>
+			</li> -->
+		</modExtensions>
+	</FactionDef>
+
+</Defs>
