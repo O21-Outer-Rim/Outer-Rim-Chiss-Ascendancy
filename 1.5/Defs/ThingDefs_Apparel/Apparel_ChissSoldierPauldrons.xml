@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRim_MediumPauldronsFabricatedBase">
+		<defName>OuterRim_ChissSoldierPauldrons</defName>
+		<label>chiss soldier pauldrons</label>
+		<description>Armoured pauldrons used by soldiers of the Chiss Ascendancy.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ChissArmourSoldier/Pauldrons</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_ChissArmory</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<tags Inherit="False">
+				<li>ChissSoldier</li>
+				<li>ChissCaptain</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/ChissArmourSoldier/Pauldrons</wornGraphicPath>
+		</apparel>
+		<tradeTags Inherit="False">
+			<li>OuterRim_Chiss_Apparel</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+</Defs>

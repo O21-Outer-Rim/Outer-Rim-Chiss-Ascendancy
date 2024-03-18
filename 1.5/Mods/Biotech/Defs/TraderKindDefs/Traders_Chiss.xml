@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<TraderKindDef ParentName="OuterRim_TraderBaseBase">
+		<defName>OuterRim_ChissAsc_Base</defName>
+		<faction>OuterRim_ChissAscendancy</faction>
+		<stockGenerators>
+			<!-- Apparel -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>OuterRim_Chiss_Apparel</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>-3~5</countRange>
+			</li>
+			<!-- Weapons -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>OuterRim_Chiss_Weapons</tradeTag>
+				<thingDefCountRange>1~3</thingDefCountRange>
+				<countRange>4~8</countRange>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef ParentName="OuterRim_TraderCaravanBase">
+		<defName>OuterRim_ChissAsc_Caravan</defName>
+		<faction>OuterRim_ChissAscendancy</faction>
+		<stockGenerators>
+			<!-- Apparel -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>OuterRim_Chiss_Apparel</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>-1~3</countRange>
+			</li>
+			<!-- Weapons -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>OuterRim_Chiss_Weapons</tradeTag>
+				<thingDefCountRange>1~3</thingDefCountRange>
+				<countRange>2~4</countRange>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef ParentName="OuterRim_TraderVisitorBase">
+		<defName>OuterRim_ChissAsc_Visitor</defName>
+		<faction>OuterRim_ChissAscendancy</faction>
+	</TraderKindDef>
+
+</Defs>

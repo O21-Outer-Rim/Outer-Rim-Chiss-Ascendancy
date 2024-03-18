@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRim_UniformBodyFabricatedBase">
+		<defName>OuterRim_ChissOfficerUniform</defName>
+		<label>chiss officer uniform</label>
+		<description>A durable utalitarian uniform used by officers of the Chiss Ascendancy.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/ChissUniformOfficer/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_ChissArmory</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<tags Inherit="False">
+				<li>ChissOfficer</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/ChissUniformOfficer/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags Inherit="False">
+			<li>OuterRim_Chiss_Apparel</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+</Defs>

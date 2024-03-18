@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimBlasterBase_Rifle">
+		<defName>OuterRim_CharricCarbine</defName>
+		<label>charric carbine</label>
+		<description>Charric weapons are those made by the Chiss, a term that tends to refer to the handheld variant of their maser weapons. A maser was a type of energy weapon, similar to but distinct from a laser. Masers used kinetic energy as well as laser energy to damage a target.</description>
+		<graphicData>
+			<texPath>OuterRim/Weapons/CharricCarbine</texPath>
+			<drawSize>1.0</drawSize>	
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_ChissArmory</researchPrerequisite>
+		</recipeMaker>
+		<weaponTags>
+			<li>ORChissGun</li>
+			<li>ORCharricCarbine</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OuterRim_Chiss_Weapons</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OuterRim_Bullet_CharricCarbine</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>30</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<soundCast>OuterRim_Shot_MaserBlasterBolt</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="OuterRimBlasterBase_Projectile">
+		<defName>OuterRim_Bullet_CharricCarbine</defName>
+		<label>maser bolt</label>
+		<graphicData>
+			<texPath>OuterRim/Projectile/BlasterBolt_Blue</texPath>
+		</graphicData>
+		<projectile>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+
+</Defs>
