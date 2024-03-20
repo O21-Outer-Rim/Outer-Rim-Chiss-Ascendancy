@@ -7,7 +7,6 @@
 			<xenotypeChances>
 				<OuterRim_Chiss>999</OuterRim_Chiss>
 			</xenotypeChances>
-			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
 		<defaultFactionType>OuterRim_ChissAscendancy</defaultFactionType>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
