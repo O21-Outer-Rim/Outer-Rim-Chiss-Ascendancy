@@ -9,9 +9,6 @@
 			<texPath>OuterRim/Weapons/CharricPistol</texPath>
 			<drawSize>1.0</drawSize>	
 		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite>OuterRim_ChissArmory</researchPrerequisite>
-		</recipeMaker>
 		<weaponTags>
 			<li>ORChissGun</li>
 			<li>ORCharricPistol</li>
