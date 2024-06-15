@@ -20,7 +20,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>OuterRim_Bullet_CharricPistol</defaultProjectile>
+				<defaultProjectile>OuterRim_Bullet_PistolBlue</defaultProjectile>
 				<warmupTime>0.8</warmupTime>
 				<range>26</range>
 				<soundCast>OuterRim_Shot_MaserBlasterBolt</soundCast>

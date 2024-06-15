@@ -21,7 +21,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>OuterRim_Bullet_CharricRifle</defaultProjectile>
+				<defaultProjectile>OuterRim_Bullet_SniperBlue</defaultProjectile>
 				<warmupTime>1.2</warmupTime>
 				<range>38</range>
 				<ticksBetweenBurstShots>18</ticksBetweenBurstShots>
