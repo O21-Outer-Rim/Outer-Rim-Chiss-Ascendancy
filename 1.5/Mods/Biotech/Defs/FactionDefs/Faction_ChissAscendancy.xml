@@ -20,6 +20,11 @@
 		<fixedName>Chiss Ascendancy</fixedName>
     	<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<techLevel>Ultra</techLevel>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<OuterRim_Chiss>999</OuterRim_Chiss>
+			</xenotypeChances>
+		</xenotypeSet>
 		<backstoryFilters>
 			<li>
 				<categories>
