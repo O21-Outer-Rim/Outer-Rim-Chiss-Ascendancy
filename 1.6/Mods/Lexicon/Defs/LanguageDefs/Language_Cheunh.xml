@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<Lexicon.LanguageDef>
+		<defName>OuterRim_Language_Cheunh</defName>
+		<label>Cheunh</label>
+		<learningDifficulty>0.8</learningDifficulty>
+		<commonality>5.0</commonality>
+		<socialImpact>0.5</socialImpact>
+		<capacityDefs>
+			<li>Talking</li>
+		</capacityDefs>
+	</Lexicon.LanguageDef>
+
+</Defs>

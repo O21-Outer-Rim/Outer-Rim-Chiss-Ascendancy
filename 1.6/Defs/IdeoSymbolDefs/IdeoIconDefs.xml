@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<IdeoIconDef>
+		<defName>OuterRim_Chiss</defName>
+		<iconPath>OuterRim/UI/Cultures/Chiss</iconPath>
+	</IdeoIconDef>
+
+</Defs>
