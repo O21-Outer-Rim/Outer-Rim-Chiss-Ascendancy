@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PlaceDef>
+		<defName>OuterRim_Cormit</defName>
+		<tags>
+			<li>OuterRim_OriginChiss</li>
+		</tags>
+		<placeRules>
+			<rulesStrings>
+				<!-- temperate world in the unknown regions -->
+				<li>place_name->Cormit</li>
+				<li>place_adjective->Cormit</li>
+				<li>place_summary->temperate world in the unknown regions</li>
+				<li>place_community->colony</li>
+				<li>place_powerCenter->capital</li>
+				<li>place_job->farmer</li>
+				<li>place_job->politician</li>
+				<li>place_job->trader</li>
+				<li>place_job->hunter</li>
+				<li>place_personalWeapon->charric rifle</li>
+				<li>place_massWeapon->orbital bombardment</li>
+				<li>place_foeLeader->vagaari</li>
+				<li>place_foeSoldiers->pirates</li>
+			</rulesStrings>
+		</placeRules>
+	</PlaceDef>
+
+</Defs>
